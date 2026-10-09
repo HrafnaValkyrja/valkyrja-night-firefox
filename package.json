@@ -1,0 +1,21 @@
+{
+  "name": "valkyrja-night-firefox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Valkyrja Night: a dark static Firefox theme",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HrafnaValkyrja/valkyrja-night-firefox"
+  },
+  "scripts": {
+    "lint": "web-ext lint -s theme",
+    "build": "web-ext build -s theme -a dist --overwrite-dest",
+    "preview": "node tools/theme-preview.mjs '' preview.png && mv shots/preview.png docs/preview.png",
+    "test": "web-ext lint -s theme && python3 check-theme.py && python3 tools/gen-frame.py theme/images/frame-gradient.png && web-ext build -s theme -a dist --overwrite-dest"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.0",
+    "web-ext": "^10.7.0"
+  }
+}
