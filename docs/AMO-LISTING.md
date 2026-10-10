@@ -12,7 +12,7 @@
 AMO builds the theme's preview images automatically from the manifest; no screenshots needed.
 
 ## Description
-A dark theme for Firefox. The title bar carries the colour, a gradient from indigo to cyan, while the toolbar, sidebar and new-tab page stay true black. The active tab has a cyan line; focus rings are cyan; separators are indigo. Text keeps at least 4.5:1 contrast everywhere.
+A dark theme for Firefox. The title bar carries the colour, a deep night-sky indigo, while the toolbar, sidebar and new-tab page stay true black. The active tab has a cyan line; focus rings are cyan; separators are indigo. Text keeps at least 4.5:1 contrast everywhere.
 
-Colours and one image only. Open source (MPL-2.0): https://github.com/HrafnaValkyrja/valkyrja-night-firefox
+Colours only. Open source (MPL-2.0): https://github.com/HrafnaValkyrja/valkyrja-night-firefox
 Companion to the "Valkyrja Night for claude.ai (unofficial)" add-on; each installs on its own.

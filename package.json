@@ -12,7 +12,7 @@
     "lint": "web-ext lint -s theme",
     "build": "web-ext build -s theme -a dist --overwrite-dest",
     "preview": "node tools/theme-preview.mjs '' preview.png && mv shots/preview.png docs/preview.png",
-    "test": "web-ext lint -s theme && python3 check-theme.py && python3 tools/gen-frame.py theme/images/frame-gradient.png && web-ext build -s theme -a dist --overwrite-dest"
+    "test": "web-ext lint -s theme && python3 check-theme.py && web-ext build -s theme -a dist --overwrite-dest"
   },
   "devDependencies": {
     "playwright": "^1.64.0",

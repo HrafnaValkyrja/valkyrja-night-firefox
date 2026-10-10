@@ -1,6 +1,6 @@
 # Valkyrja Night (Firefox theme)
 
-A dark static Firefox theme: an indigo-to-cyan title-bar gradient, true-black toolbar, sidebar and new-tab page, cyan active tab and focus, indigo lines. Colours and one image, no code, no permissions.
+A dark static Firefox theme: a night-sky indigo title bar (#131029), true-black toolbar, sidebar and new-tab page, cyan active tab and focus, indigo lines. Colours only, no code, no permissions.
 
 ![Preview](docs/preview.png)
 *MOCK: an HTML mock-up of Firefox's tab strip, toolbar and sidebar drawn from `theme/manifest.json`, not a Firefox screenshot (headless Firefox can't capture browser chrome).*
@@ -15,7 +15,7 @@ Companion to [Valkyrja Night for claude.ai](https://github.com/HrafnaValkyrja/va
 | | |
 |---|---|
 | Permissions | none |
-| Code | none (static `theme` manifest: colours + `images/frame-gradient.png`) |
+| Code | none (static `theme` manifest: colours only) |
 | Network | none |
 | Data collection | none |
 
@@ -23,10 +23,10 @@ Companion to [Valkyrja Night for claude.ai](https://github.com/HrafnaValkyrja/va
 ```sh
 npm install
 npx playwright install firefox   # only for the preview
-npm test          # web-ext lint, manifest check (no permissions, theme only), gradient contrast check, build
+npm test          # web-ext lint, manifest check (no permissions, theme only, text contrast at least 4.5:1), build
 npm run preview   # docs/preview.png
 ```
-`tools/gen-frame.py` builds the title-bar gradient and asserts tab text (`#dce8f5`) keeps at least 4.5:1 contrast on every column. Static themes can't stretch images, so it is 2048px wide; `frame` is set to the last colour so wider windows continue without an edge.
+`check-theme.py` also asserts every text colour keeps at least 4.5:1 contrast on its background (tabs, toolbar, URL field, menus, sidebar, new tab).
 
 ## What a static theme can't do
 No shapes (tabs keep Firefox's own shape), no fonts, no glows: only the colour keys and images of the [theme manifest](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/theme).

@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Valkyrja Night",
-  "version": "1.0.0",
-  "description": "Dark Firefox theme: indigo-to-cyan title bar gradient, true-black toolbar and sidebar, cyan active tab and focus. Colours and one image only, no code.",
+  "version": "1.1.0",
+  "description": "Dark Firefox theme: night-sky indigo title bar, true-black toolbar and sidebar, cyan active tab and focus. Colours only, no code.",
   "browser_specific_settings": {
     "gecko": {
       "id": "valkyrja-night-firefox@hrafnavalkyrja.github.io",
@@ -16,14 +16,14 @@
   },
   "theme": {
     "colors": {
-      "frame": "#00708e",
+      "frame": "#131029",
       "frame_inactive": "#131029",
       "tab_background_text": "#dce8f5",
       "tab_selected": "#0a0818",
       "tab_text": "#dce8f5",
       "tab_line": "#4fe0ff",
       "tab_loading": "#4fe0ff",
-      "tab_background_separator": "#dce8f540",
+      "tab_background_separator": "#5b4bd659",
       "toolbar": "#000000",
       "toolbar_text": "#dce8f5",
       "icons": "#8fd3ff",
@@ -57,13 +57,7 @@
     },
     "properties": {
       "color_scheme": "dark",
-      "content_color_scheme": "dark",
-      "additional_backgrounds_alignment": [
-        "left top"
-      ]
-    },
-    "images": {
-      "theme_frame": "images/frame-gradient.png"
+      "content_color_scheme": "dark"
     }
   }
 }
